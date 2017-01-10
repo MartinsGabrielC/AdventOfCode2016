@@ -937,6 +937,7 @@ shoewudys-tou-ixyffydw-478[uszty]'''
 import operator
 from collections import OrderedDict
 import string
+import sys
 
 def part1():
     count = 0
@@ -982,11 +983,12 @@ def part2():
             print(rid)
             print(phrase)
 
-
-
-
-
-
 if __name__ == '__main__':
     data = data.split(sep='\n')
-    part2()
+    try:
+        if sys.argv[1] == '1':
+            part1()
+        else:
+            part2()
+    except IndexError:
+        print("Need to input which part")

@@ -1624,9 +1624,7 @@ def part2():
 if __name__ == '__main__':
     try:
         if sys.argv[1] == '1':
-            print("HELOOOOO")
             part1()
-
         else:
             part2()
     except IndexError:
